@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Project, Technology } from '../types';
 import * as StorageService from '../services/storage';
-import { Github, Smartphone, ExternalLink, Code, Coffee, Heart, Globe, Layers, Cpu } from 'lucide-react';
+import { Github, Smartphone, ExternalLink, Code, Coffee, Heart, Globe, Layers, Cpu, LogIn } from 'lucide-react';
 
 const Home: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -75,6 +76,10 @@ const Home: React.FC = () => {
               <Github className="w-5 h-5" />
               GitHub
             </a>
+             <Link to="/portfolio-login" className="bg-android-100 dark:bg-android-900/30 text-android-700 dark:text-android-300 hover:bg-android-200 dark:hover:bg-android-900/50 px-8 py-4 rounded-full font-bold transition flex items-center justify-center gap-2 hover:shadow-lg hover:-translate-y-0.5">
+              <LogIn className="w-5 h-5" />
+              Sign In
+            </Link>
           </div>
         </div>
       </section>
