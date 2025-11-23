@@ -1,25 +1,28 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0;url=/copy-of-rabin-adhikari/#/" />
-    <script>
-      (function(){
-        // Repo base (matches `vite.config.ts` base)
-        var repo = '/copy-of-rabin-adhikari';
-        var path = location.pathname + location.search + location.hash;
-        // Remove repo prefix if present
-        if (path.indexOf(repo) === 0) {
-          path = path.slice(repo.length);
-        }
-        if (!path) path = '/';
-        // Redirect to hash-based route preserving path
-        location.replace(repo + '/#' + path);
-      })();
-    </script>
-    <title>Redirecting…</title>
-  </head>
-  <body>
-    Redirecting to app…
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="refresh" content="0;url=/copy-of-rabin-adhikari/#/" />
+  <script>
+    (function () {
+      // Repo base (matches `vite.config.ts` base)
+      var repo = '/copy-of-rabin-adhikari';
+      var path = location.pathname + location.search + location.hash;
+      // Remove repo prefix if present
+      if (path.indexOf(repo) === 0) {
+        path = path.slice(repo.length);
+      }
+      if (!path) path = '/';
+      // Redirect to hash-based route preserving path
+      location.replace(repo + '/#' + path);
+    })();
+  </script>
+  <title>Redirecting…</title>
+</head>
+
+<body>
+  Redirecting to app…
+</body>
+
 </html>
